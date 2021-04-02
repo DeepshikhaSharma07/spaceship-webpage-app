@@ -7,7 +7,8 @@
       display: flex;
       margin: 0;
       background-image: url("https://i.imgur.com/6Zkgo2I.jpg");
-      opacity: 1; 
+      opacity: 1;
+      z-index: -5; 
       overflow-y: hidden; /* Hide vertical scrollbar */
       overflow-x: hidden; /* Hide horizontal scrollbar */
   }
@@ -17,9 +18,18 @@
       align-content: center;
   }
   .goob{
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    color: #c7a82b;
   }
+  .fool{
+      background-color: transparent;
+      border: none;
+      color: rgb(228, 217, 60);
+      font-size: 50px;
+      text-shadow: 2px 2px #000000;
+  }
+
  
     /* starwars scroll text.... */
     /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -132,13 +142,45 @@ scrollbar-width: none;  /* Firefox */
     padding-top: 60px;
   }
 
-
+/* ship animation css */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#ship {
+  z-index: -1;
+  opacity: 1;
+}
+.flier {
+  pointer-events: none;
+}
+.flier > * {
+/* Adjust animation duration to change the element's speed */
+        animation: fly 15s linear infinite;
+        pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  opacity: 1;
+}
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+@keyframes fly {
+  from {
+    -webkit-transform: translateY(0px) translateX(-500px);
+    height: 500px;
+  }
+  to {
+    -webkit-transform: translateY(0px) translateX(2000px);
+    height: 3000px;
+  }
+}
   /* star animation css */
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
 
   #nc-main {
-    z-index: -1;
+    z-index: -2;
     opacity: 0.8;
     position: relative;
     height: 100vh;
