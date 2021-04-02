@@ -58,13 +58,14 @@ scrollbar-width: none;  /* Firefox */
   letter-spacing: 6px;
   line-height: 150%;
   text-align: justify;
+  opacity: 0.8;
 } 
 
 
 @keyframes wrapper {
   0% {
     /* The element starts below the screen */
-    top: 0;
+    top: -400px;
     /* Rotate the text 20 degrees but keep it close to the viewer */
     transform: rotateX(20deg) translateZ(0);
   }
@@ -79,6 +80,7 @@ scrollbar-width: none;  /* Firefox */
   /* ---------------------------------------------------------------------------------------------------------------------------- */
   /* navbar/header */
   #navbar {
+    font-family: 'Pathway Gothic One', sans-serif;
     font-size:x-large;
     opacity: 0.3;
     display: flex;
