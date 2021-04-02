@@ -6,6 +6,7 @@
     width: 20em;
 }
 .starships li {
+    
     cursor: pointer;
     position: relative;
     left: 0;

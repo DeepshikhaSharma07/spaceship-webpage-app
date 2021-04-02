@@ -1,14 +1,14 @@
 import { Starship } from './starship';
 
 export const STARSHIPS: Starship[] = [
-  { id: 1, name: 'Bob', commander: 'Computer Science'},
-  { id: 2, name: 'Sheila', commander: 'History'},
-  { id: 3, name: 'Taylor', commander: 'English'},
-  { id: 4, name: 'James', commander: 'Statistics'},
-  { id: 5, name: 'Claire', commander: 'Chemistry'},
-  { id: 6, name: 'John', commander: 'Political Science'},
-  { id: 7, name: 'Emily', commander: 'Business'},
-  { id: 8, name: 'David', commander: 'Mechanical Engineering'},
-  { id: 9, name: 'Jessica', commander: 'Economics'},
-  { id: 10, name: 'Steve', commander: 'Graphic Design'}
+  { id: 1, name: 'Imperial-I Class Destroyer', commander: 'Galactic Empire'},
+  { id: 2, name: 'Assertor-Class Dreadnought', commander: 'Galactic Empire'},
+  { id: 3, name: 'Scarran Dreadnought', commander: 'Scarran Hierarchy'},
+  { id: 4, name: 'Basestar', commander: 'Cylon Empire'},
+  { id: 5, name: 'Dalek Command Saucer', commander: 'Dalek Empire'},
+  { id: 6, name: 'Heighliner Type Jumpship', commander: 'Spacing Guild'},
+  { id: 7, name: 'Leviathan', commander: 'Zerg'},
+  { id: 8, name: 'Reverence-Class Cruiser', commander: 'Covenant Empire'},
+  { id: 9, name: 'Athena Class Command Ship', commander: 'Terran Federation'},
+  { id: 10, name: 'Krooze-Class Cruiser', commander: 'Orks'}
 ];

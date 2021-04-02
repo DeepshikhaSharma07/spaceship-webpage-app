@@ -2,22 +2,45 @@
     <a class="active" href="javascript:void(0)">Starship Index</a>
 </div>
 
-<div class="container">
-    
-<app-starships></app-starships>
-    <div id="nc-main" class="nc-main bg-cover bg-cc">
-  
-              <div class="full-wh">
-              
-                  <!-- STAR ANIMATION -->
-                  <div class="bg-animation">
-                      <div id='stars'></div>
-                      <div id='stars2'></div>
-                      <div id='stars3'></div>
-                      <div id='stars4'></div>
-                  </div><!-- / STAR ANIMATION -->
-  
-              </div>
+<section class="container">
+    <div class="wrapper" id="loot">
+        <app-starships></app-starships>
     </div>
-  
-</div>
+    <div id="nc-main" class="nc-main bg-cover bg-cc">
+
+        <div class="full-wh">
+
+            <!-- STAR ANIMATION -->
+            <div class="bg-animation">
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <div id='stars4'></div>
+            </div><!-- / STAR ANIMATION -->
+
+        </div>
+    </div>
+
+    <script>
+        var loot = document.getElementById("loot");
+        if (loot.addEventListener) {
+            // IE9, Chrome, Safari, Opera
+            loot.addEventListener("mousewheel", MouseWheelHandler, false);
+            // Firefox
+            loot.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        }
+        // IE 6/7/8
+        else loot.attachEvent("onmousewheel", MouseWheelHandler);
+
+        function MouseWheelHandler(e) {
+
+            // cross-browser wheel delta
+            var e = window.event || e; // old IE support
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            myimage.style.width = Math.max(50, Math.min(800, myimage.width + (30 * delta))) + "px";
+
+	return false;
+}
+    </script>
+    
+</section>
