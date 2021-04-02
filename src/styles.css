@@ -16,6 +16,10 @@
       justify-content: center;
       align-content: center;
   }
+  .goob{
+    align-items: center;
+    justify-content: center;
+  }
  
     /* starwars scroll text.... */
     /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -58,7 +62,8 @@ scrollbar-width: none;  /* Firefox */
   letter-spacing: 6px;
   line-height: 150%;
   text-align: justify;
-  opacity: 0.8;
+  opacity: 0.9;
+  text-shadow: 2px 2px #000000;
 } 
 
 

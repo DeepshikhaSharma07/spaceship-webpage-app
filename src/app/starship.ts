@@ -1,5 +1,5 @@
 export interface Starship {
-    id: number;
+    Galactic_Registration: number;
     name: string;
     commander: string;
   }
